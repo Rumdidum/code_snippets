@@ -6,9 +6,17 @@ class Employee:
         self.last = last
         self.email = first + '.' + last + '@email.com'
         self.pay = pay
+    
+   
+#    def fullname(self):
+#        return '{} {}'.format(self.first, self.last)
 
+"""New string formatting method since python 3.6 is possible
+that is much more readable. 
+"""
     def fullname(self):
-        return '{} {}'.format(self.first, self.last)
+        return f"{self.first} {self.last}"
+ 
 
 emp_1 = Employee('Corey', 'Schafer', 50000)
 emp_2 = Employee('Test', 'Employee', 60000)
